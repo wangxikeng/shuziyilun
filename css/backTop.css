@@ -1,0 +1,35 @@
+.ten_totop_float:hover {
+    background-color: #0052d9;
+}
+
+.ten_totop_float:hover:after {
+    border-bottom: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+}
+
+.ten_totop_float {
+    position: fixed;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    bottom: 50px;
+    z-index: 100000px;
+    transition: ease all 0.3s;
+    background-color: #FFF;
+    border-radius: 50%;
+    border: 1px solid #0052D9;
+    padding: 0px;
+}
+
+.ten_totop_float::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: calc(50% - 3px);
+    left: calc(50% - 6px);
+    transform: rotate(-135deg);
+    border-bottom: 1px solid #0052D9;
+    border-right: 1px solid #0052D9;
+}

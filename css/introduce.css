@@ -1,0 +1,90 @@
+/* 公司详情页面---------------------------------------------- */
+.ten_links {
+    padding: 72px 0px 48px 0px;
+    font-family: 'TencentSansw7';
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-left: -24px;
+}
+
+.ten_links a {
+    position: relative;
+    width: 359px;
+    height: 206px;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.container.ten_links a img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.ten_links .ten_img:hover img {
+    transform: scale(1.1);
+}
+
+.ten_links .txt_ten {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0px 80px;
+    z-index: 1;
+}
+
+.ten_links .txt_ten h2 {
+    font-size: 32px;
+    line-height: 1.2em;
+    margin: 12px 0px;
+    font-family: 'TencentSansW3CN';
+    display: inline-block;
+    color: #FFF;
+    width: auto;
+    padding-top: 12px;
+    font-weight: bold;
+}
+
+.ten_img:hover .txt_ten h2::after {
+    width: 100%;
+    opacity: 1;
+    transition: ease all 0.3s;
+}
+
+.ten_links .txt_ten h2::after {
+    content: "";
+    display: block;
+    margin: 12px 0px 0px 0px;
+    width: 1%;
+    height: 2px;
+    background: #FFF;
+    opacity: 0;
+}
+
+.ten_links .ten_img::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(25, 74, 195, 0);
+}
+
+.ten_links .ten_img:hover:after {
+    background: rgba(25, 74, 195, 0.8);
+    transition: ease all 0.3s;
+}

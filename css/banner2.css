@@ -1,0 +1,136 @@
+/* 轮播图2------------------------------------------ */
+.lunbotu_2 {
+    font-family: 'TencentSansw3';
+    width: 1375px;
+    margin: 72px auto;
+}
+
+.ten_main_2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    margin: 0px auto;
+    background-color: #fff;
+}
+
+/* 图片部分 */
+.ten_main_2 .imgshow2 {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.ten_main_2 .imgshow2 .ten_main_img {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ten_main_2 .imgshow2 .ten_main_img img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 左右按钮部分 */
+.imgshow2_btn {
+    width: 41px;
+    height: 69px;
+    position: absolute;
+    top: 88%;
+    background: url(../images/icon-slides.png);
+    z-index: 2;
+}
+
+.imgshow2_btn_left {
+    background-position-x: -83px;
+}
+
+.imgshow2_btn_left:hover {
+    background-position-x: 0px;
+}
+
+.imgshow2_btn_right:hover {
+    background-position-x: -41px;
+}
+
+.imgshow2_btn_right {
+    right: 1089px;
+    background-position-x: 41px;
+}
+
+.ten_main_text {
+    position: absolute;
+    left: 51px;
+    top: 70%;
+}
+
+.ten_main_text h3 {
+    font-weight: 700;
+    font-family: 'TencentSansw7';
+    font-size: 24px;
+    color: #FFF;
+    line-height: 1.4em;
+    margin: 12px 0px;
+    padding: 0px;
+}
+
+.ten_main_text p {
+    font-family: 'TencentSansw3';
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 12px 0px;
+    padding: 0px;
+    color: #FFF;
+}
+
+.ten_main_2 .ten_sub_txt {
+    width: 50%;
+    padding-left: 72px
+}
+
+.ten_main_2 .ten_sub_txt h2 {
+    font-family: 'TencentSansw7';
+    color: #1B1F25;
+    font-size: 32px;
+    line-height: 1.2em;
+    margin: 12px 0px;
+    padding: 0px;
+    font-weight: 700;
+}
+
+.ten_main_2 .ten_sub_txt h5 {
+    font-size: 18px;
+    color: #2B2E2E;
+    line-height: 1.8em;
+    margin: 12px 0px;
+    padding: 0px;
+    font-weight: normal;
+}
+
+.ten_sub_txt a:hover h2 {
+    color: #0052D9;
+}
+
+.ten_sub_txt .ten_subbanner_arr {
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-image: url(../images/icon_arrow_r_dark.png);
+    margin: 0px 24px 0px 0px;
+}

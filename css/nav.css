@@ -1,0 +1,117 @@
+/* 导航栏部分----------------------------------- */
+.head-con {
+    display: block;
+    display: flex;
+    height: 72px;
+    background-color: #2b303b;
+    margin: 0px auto;
+    position: relative;
+}
+
+.head-con .container {
+    height: 72px;
+    position: relative;
+}
+
+.head-con .logo {
+    display: block;
+    height: 22px;
+    width: 168px;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    background: url(../images/menu_logo.png) no-repeat 0 0;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+/* 给导航栏增加一个边框效果 */
+.menu-list {
+    width: 639px;
+    height: 72px;
+    position: absolute;
+    right: 160px;
+    top: 0px;
+    display: flex;
+    border-radius: 15px;
+
+}
+
+/* 给每一个菜单元素设置一个大小 */
+.menu_item {
+    flex: 1;
+    position: relative;
+    height: 72px;
+}
+
+/* 给下拉菜单的li设置一个边框 */
+.sub_list {
+    box-shadow: 2px 5px 15px rgb(0, 0, 0, 0.7);
+    position: absolute;
+    z-index: 2;
+    background-color: #2b2e2e;
+}
+
+/* 鼠标移动具有圆角效果 */
+.txt:hover,
+.sub_list:hover {
+    border-radius: 3px;
+}
+
+/* 给菜单元素设置基础样式设置一个 */
+.menu-list .menu_item .txt {
+    display: block;
+    height: 72px;
+    line-height: 72px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/* 先让下拉菜单不显示 */
+.sub_list {
+    display: none;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.sub_list_son {
+    border-radius: 10px;
+
+}
+
+.sub_list li a {
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.7;
+    padding: 13px 0;
+    text-align: center;
+}
+
+.lange_area {
+    position: absolute;
+    right: 0px;
+    top: 25px;
+}
+
+.lange_area a {
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    font-family: "PingFangSC-Regular";
+}
+
+.menu_item:hover .sub_list {
+    display: block;
+}
+
+.menu_item:hover .txt {
+    color: skyblue;
+}
+
+.menu-list .menu_item .sub_list li a:hover {
+    color: skyblue;
+}
